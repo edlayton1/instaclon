@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+    <div id="container">
+        <div id = "upper_menu">
+            <ul>
+                <li><a href="../html/index.html">Home</a></li>
+                <li><a href="../html/social-feed.html">Social Feed</a></li>
+                <li><a href="../html/log-in.html">Log in</a></li>
+            </ul>
+            
+        </div>
+        <div class = "information-block">
+            <h1>¡Forma parte de nosotros!</h1>
+            <h2>Log in (Work in Progress)</h2>
+        </div>
+        <div class = "content-body-log">
+            
+            <form accion="mailto" METHOD="post" ENCTYPE="text/plain">
+                
+                <h3>Nombres:</h3>
+                <input type="text" name="Nombres" size="30" maxlength="30">
+                <h3>Apellido Paterno:</h3>
+                <input type="text" name="Apellido_Paterno" size="30" maxlength="30">
+                <h3>Apellido Materno:</h3>
+                <input type="text" name="Apellido_Materno" size="30" maxlength="30">
+
+                <h3>Genero:</h3>
+                <h5>Hombre <input type = "radio" name = "Genero" value= "hombre" >
+                Mujer <input type = "radio" name = "Genero" value= "mujer">
+                Otro <input type = "radio" name = "Genero" value= "otro">
+                HELICOPTERO DE COMBATE <input type = "radio" name = "Genero" value= "HC"></h5>
+                <h3>Fecha de Nacimiento</h3>
+                <select name="Dia">
+                    <option> 1<option> 2<option> 3<option> 4<option> 5<option> 6<option> 7<option> 8
+                    <option> 9<option> 10<option> 11<option> 12<option> 13<option> 14<option> 15<option> 16
+                    <option> 17<option> 18<option> 19<option> 20<option> 21<option> 22<option> 23<option> 24
+                    <option> 25<option> 26<option> 27<option> 28<option> 29<option> 30<option> 31
+                </select>
+                <select name="Mes">
+                    <option> Enero<option> Febrero<option> Marzo<option> Abril<option>Mayo<option> Junio<option> Julio<option> Agosto
+                    <option> Septiembre<option> Octubre<option> Noviembre<option> Diciembre
+                </select>
+                <select name="Año">
+                    <option> 2000<option> 1999<option>1998<option>1997<option>1996<option> 1995<option> 1994<option> 1993
+                    <option> 1993
+                </select>
+                <!-- <h3>Introduce tus comentarios:</h3>
+                <textarea name="Comentarios" rows="15" cols="60">
+                </textarea> -->
+                <h3>Usuario:</h3>
+                <input type="text" name="Usuario" size="20" maxlength="20">
+                <h3>Email:</h3>
+                <input type="text" name="Email" size="30" maxlength="30">
+                <h3>Password:</h3>
+                <input type="password" name="Password" size="30" maxlength="30">
+                <h3>Confirmacion de password:</h3>
+                <input type="password" name="Password" size="30" maxlength="30">
+
+                
+                <h3>Estado</h3>
+                <select name="Ciudad">
+                <option> CDMX
+                <option> Yucatan
+                <option> EDOMEX
+                <option> Tamaulipas
+                </select>
+                <h3>Fin de Formulario</h3>
+                <input TYPE = "reset" Value= "Eliminar datos">
+                <Input type = "submit" Value= "Confirmar datos">
+
+                
+            </form>
+        </div>
+
+
+
+
+    </div>
+
+    
+</body>
+</html>
