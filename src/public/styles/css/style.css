@@ -1,7 +1,4 @@
 body{
-    background: url(../src/images/fondo.jpg)
-    no-repeat fixed center center #333;
-    background-size: cover;
     font-size: 16px;
     background-color: #f6aa1c;
 }
