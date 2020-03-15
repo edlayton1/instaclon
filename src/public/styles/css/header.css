@@ -1,0 +1,29 @@
+header{
+    /* background-color: tan; */
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 12px;
+}
+
+header a{
+    float: left;
+    background-color: dodgerblue;
+    font-size: 20px;
+}
+
+/* header rigth{
+    display: flex;
+    color: white;
+} */
+.rigth{
+    padding: 4px;
+    justify-content: flex-end;
+    float: right;
+
+}
+
+.rigth a{
+    color: teal;
+    background-color: white; 
+    padding: 4px;
+}
