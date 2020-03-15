@@ -2,17 +2,16 @@ const path = require('path') ;
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 
 
 module.exports = {
-    entry: {
-        home: path.resolve(__dirname,'../src/index.js')
-    },
+    entry: "../src/index.js",
     mode: 'development',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: '[name].bundle.js'
+        filename: 'main.js'
     },
     devServer: {
         hot: true,
@@ -22,6 +21,7 @@ module.exports = {
         rules: [
             {
                 test: /\.(css)$/,
+                exclude: /node_modules/,
                 use: [
                     'style-loader',
                     'css-loader'
@@ -49,13 +49,14 @@ module.exports = {
             }
             ,{
                 test:/\.js$/,
-                use: 'babel-loader',
-                exclude: /node_modules/
+                exclude: /node_modules/,
+                use: 'babel-loader'
+                
             },
             {
                 test:/\.js$/,
-                use: 'eslint-loader',
                 exclude: /node_modules/,
+                use: 'eslint-loader',
                 enforce: 'pre'
             }
         ]
@@ -64,14 +65,18 @@ module.exports = {
         new HtmlWebpackPlugin({
             title: 'babel_example',
             inject:true,
-            template: './src/public/index.html',
+            template: '../src/public/index.html',
             filename: './index.html'
         }),
         new webpack.HotModuleReplacementPlugin({
             title: 'hot_module',
             inject:true,
-            template: './src/public/index.html',
+            template: '../src/public/index.html',
             filename: './index.html'
-        })
+        }),
+        new CopyWebpackPlugin([{
+            from: "./src/styles/style.css",
+            to: ""
+        }])
     ]
 }

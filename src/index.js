@@ -1,4 +1,4 @@
-import '../src/public/styles/css'
+import router from "./routes/index";
 
-document.getElementsByClassName('content-body').innerHTML = 
-''
+window.addEventListener("load",router);
+window.addEventListener("hashchange",router);
