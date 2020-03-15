@@ -1,35 +1,29 @@
 {
-  "name": "instaclon-unica",
-  "version": "0.0.5",
-  "description": "clon of instagram.",
+  "name": "ejemplowebpack",
+  "version": "1.0.0",
+  "description": "Un ejemplo con babel y eslint ",
   "main": "index.js",
   "scripts": {
-    "webpack": "webpack --mode development",
-    "webpack:server": "webpack-dev-servertest",
-    "git:push": "git push -u origin master"
+    "webpack:other": "webpack --config ./src/config/webpack.config.js",
+    "webpack:server": "webpack-dev-server",
+    "webpack:dev": "webpack"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/edlayton1/instaclon-unica.git"
-  },
-  "author": "Darki",
+  "author": "BetoNajera",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/edlayton1/instaclon-unica/issues"
-  },
-  "homepage": "https://github.com/edlayton1/instaclon-unica#readme",
   "devDependencies": {
     "@babel/core": "^7.8.7",
     "@babel/preset-env": "^7.8.7",
     "babel-loader": "^8.0.6",
-    "copy-webpack-plugin": "5.1.1",
     "css-loader": "^3.4.2",
-    "html-webpack-plugin": "3.2.0",
+    "file-loader": "^5.1.0",
+    "html-webpack-plugin": "^3.2.0",
     "node-sass": "^4.13.1",
-    "sass": "^1.26.3",
+    "sass": "^1.26.2",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.1.3",
+    "url-loader": "^3.0.0",
     "webpack": "^4.42.0",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
   }
 }
