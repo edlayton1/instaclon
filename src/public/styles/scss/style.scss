@@ -1,0 +1,139 @@
+// Colors
+$page-color-tool: gold;
+$icon-color: pink;
+$font-color-link: goldenrod;
+$container-color: purple;
+$card-color: pink;
+$photo-container-color:none;
+$information-container-color:none;
+//measures
+$header-footer-width: 100%;
+$padding-header-footer: 10px 10px;
+$font-text-hf:90%;
+$border-radius-buttom:0px;
+$margin-between-cards: 20px;
+//decoration
+$text-decoration-link: none;
+header{
+    background-color: $page-color-tool;
+    display: flex;
+    justify-content: space-between;
+    padding: $padding-header-footer;
+    width:$header-footer-width;
+
+}
+header a{
+    float: left;
+    background-color: $icon-color;
+    font-size: $font-text-hf;
+    text-decoration: $text-decoration-link;
+}
+footer{
+    display:flex;
+    background-color: $page-color-tool;
+    margin-top: auto;
+    width: $header-footer-width;
+    justify-content: center;
+    padding:$padding-header-footer;
+}
+footer .down a {
+    float:center;
+    justify-content: space-between;
+    background-color: $font-color-link;
+    text-decoration: $text-decoration-link;
+
+}
+.rigth{
+    padding: 4px;
+    justify-content: flex-end;
+    float: right;
+    text-decoration: $text-decoration-link;
+}
+
+.rigth a{
+    color: teal;
+    background-color: $page-color-tool; 
+    padding: 4px;
+    text-decoration: $text-decoration-link;
+}
+body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+.container{
+    width: 70%;
+    background-color:$container-color;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container-photo{
+    background-color: $photo-container-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-card-information{
+    background-color: $information-container-color;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: $border-radius-buttom;
+
+}
+
+.card{
+    background:$card-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    min-width: 60%;
+    min-height: 600px;
+    margin-top: $margin-between-cards;
+    margin-bottom: $margin-between-cards;
+}
+.card h3{
+    display: flex;
+    justify-content: center;
+
+}
+.card img{
+    min-width: 1vh;
+    max-width: 300px;
+    max-height: 300px;
+    margin-left: 18%;
+    margin-right: 18%;
+    justify-content: center;
+}
+button{
+    margin: 10px;
+}
+
+
+
+
+.container-card .buttoms{
+    display:flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+.container-card .information{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* background: none; */
+}
+// .card p{
+//     display:flex;
+//     background: red;
+// }

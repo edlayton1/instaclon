@@ -1,8 +1,12 @@
 
-import './public/styles/css/header.css'
-
+import './public/styles/css/style.css'
 import Header from './public/templates/header';
+import Footer from './public/templates/footer';
+import Cards from './public/templates/cards'
 const x = Header;
-console.log(Header.view);
-console.log(x)
-document.body.innerHTML =   Header();
+
+document.getElementById("header").innerHTML =   Header();
+document.getElementById("footer").innerHTML = Footer(); 
+document.getElementById("container").insertAdjacentHTML("beforeend",Cards("1"));
+document.getElementById("container").insertAdjacentHTML("beforeend",Cards("2"));
+

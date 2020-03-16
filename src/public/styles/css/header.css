@@ -11,10 +11,6 @@ header a{
     font-size: 20px;
 }
 
-/* header rigth{
-    display: flex;
-    color: white;
-} */
 .rigth{
     padding: 4px;
     justify-content: flex-end;

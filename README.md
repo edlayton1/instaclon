@@ -23,12 +23,19 @@ npm i -D style-loader css-loader webpack webpack-cli html-webpack-plugin
 ```
 npm i -D -E html-webpack-plugin copy-webpack-plugin
 ```
-5. Install sass, sass-loader and node-sass
+5. Install the webpack-dev-server
+```
+npm i -D webpack-dev-server
+```
+6. Install sass, sass-loader and node-sass
 ```
 npm i -D sass sass-loader node-sass
 ```
-
-6. Install Style checker:
+7. Install the file-loader dependence
+```
+npm i -D file-loader
+```
+8. Install Style checker:
 ```
 npm i -D eslint eslint-loader standard
 ```
