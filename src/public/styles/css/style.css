@@ -2,23 +2,24 @@ header {
   background-color: gold;
   display: flex;
   justify-content: space-between;
-  padding: 20px 12px;
+  padding: 10px 10px;
   width: 100%;
 }
 
 header a {
   float: left;
   background-color: pink;
-  font-size: 20px;
+  font-size: 90%;
   text-decoration: none;
 }
 
 footer {
+  display: flex;
   background-color: gold;
   margin-top: auto;
   width: 100%;
   justify-content: center;
-  padding: 20px 12px;
+  padding: 10px 10px;
 }
 
 footer .down a {
@@ -86,14 +87,34 @@ body {
   margin-bottom: 20px;
 }
 
+.card h3 {
+  display: flex;
+  justify-content: center;
+}
+
+.card img {
+  min-width: 1vh;
+  max-width: 300px;
+  max-height: 300px;
+  margin-left: 18%;
+  margin-right: 18%;
+  justify-content: center;
+}
+
+button {
+  margin: 10px;
+}
+
 .container-card .buttoms {
   display: flex;
   justify-content: center;
+  padding-top: 10px;
 }
 
 .container-card .information {
   display: flex;
   flex-direction: column;
+  align-items: center;
   /* background: none; */
 }
 

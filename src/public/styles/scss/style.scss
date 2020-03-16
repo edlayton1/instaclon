@@ -8,8 +8,8 @@ $photo-container-color:none;
 $information-container-color:none;
 //measures
 $header-footer-width: 100%;
-$padding-header-footer: 20px 12px;
-$font-text-hf:20px;
+$padding-header-footer: 10px 10px;
+$font-text-hf:90%;
 $border-radius-buttom:0px;
 $margin-between-cards: 20px;
 //decoration
@@ -29,6 +29,7 @@ header a{
     text-decoration: $text-decoration-link;
 }
 footer{
+    display:flex;
     background-color: $page-color-tool;
     margin-top: auto;
     width: $header-footer-width;
@@ -79,6 +80,7 @@ body{
     justify-content: center;
     align-items: center;
 }
+
 .container-card-information{
     background-color: $information-container-color;
     display:flex;
@@ -99,20 +101,22 @@ body{
     margin-top: $margin-between-cards;
     margin-bottom: $margin-between-cards;
 }
-// .card h3{
-//     display: flex;
-//     justify-content: center;
+.card h3{
+    display: flex;
+    justify-content: center;
 
-// }
-// .card img{
-//     min-width: 1vh;
-//     max-width: 300px;
-//     max-height: 300px;
-//     margin-left: 18%;
-//     margin-right: 18%;
-//     justify-content: center;
-// }
-
+}
+.card img{
+    min-width: 1vh;
+    max-width: 300px;
+    max-height: 300px;
+    margin-left: 18%;
+    margin-right: 18%;
+    justify-content: center;
+}
+button{
+    margin: 10px;
+}
 
 
 
@@ -120,10 +124,12 @@ body{
 .container-card .buttoms{
     display:flex;
     justify-content: center;
+    padding-top: 10px;
 }
 .container-card .information{
     display:flex;
     flex-direction: column;
+    align-items: center;
 
     /* background: none; */
 }
