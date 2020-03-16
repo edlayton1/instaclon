@@ -1,11 +1,13 @@
 // Colors
-$page-color-tool: gold;
-$icon-color: pink;
-$font-color-link: goldenrod;
-$container-color: purple;
-$card-color: blue;
+$page-color-tool: #5b2333;
+$icon-color: #5b2333;
+$font-color-link: #5b2333;
+$container-color: #561d25;
+$card-color: #d33f49;
+$background-colors: #8b1e3f;
 $photo-container-color:none;
 $information-container-color:none;
+$font-colors: white;
 //measures
 $header-footer-width: 100%;
 $padding-header-footer: 10px 10px;
@@ -15,6 +17,7 @@ $margin-between-cards: 20px;
 //decoration
 $text-decoration-link: none;
 header{
+    color:$font-colors;
     background-color: $page-color-tool;
     display: flex;
     justify-content: space-between;
@@ -23,6 +26,7 @@ header{
 
 }
 header a{
+    color:$font-colors;
     float: left;
     background-color: $icon-color;
     font-size: $font-text-hf;
@@ -37,6 +41,7 @@ footer{
     padding:$padding-header-footer;
 }
 footer .down a {
+    color:$font-colors;
     float:center;
     justify-content: space-between;
     background-color: $font-color-link;
@@ -51,12 +56,14 @@ footer .down a {
 }
 
 .rigth a{
-    color: teal;
+    color: $font-colors;
     background-color: $page-color-tool; 
     padding: 4px;
     text-decoration: $text-decoration-link;
 }
 body{
+    color: $font-colors;
+    background-color: $background-colors;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -71,6 +78,8 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
     
 }
 .container-photo{
@@ -102,6 +111,7 @@ body{
     margin-bottom: $margin-between-cards;
 }
 .card h3{
+    
     display: flex;
     justify-content: center;
 
