@@ -3,7 +3,7 @@ $page-color-tool: gold;
 $icon-color: pink;
 $font-color-link: goldenrod;
 $container-color: purple;
-$card-color: pink;
+$card-color: blue;
 $photo-container-color:none;
 $information-container-color:none;
 //measures
@@ -65,7 +65,7 @@ body{
 }
 
 .container{
-    width: 70%;
+    width: 800px;
     background-color:$container-color;
     display:flex;
     flex-direction: column;
@@ -128,10 +128,22 @@ button{
 }
 .container-card .information{
     display:flex;
+    // width: 90%;
     flex-direction: column;
     align-items: center;
 
     /* background: none; */
+}
+
+.green{
+    border-color: forestgreen;
+    background-color: forestgreen;
+    width: 50px;
+}
+.red{
+    border-color: crimson;
+    background-color:crimson;
+    width: 80px;
 }
 // .card p{
 //     display:flex;

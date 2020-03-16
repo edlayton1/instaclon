@@ -51,7 +51,7 @@ body {
 }
 
 .container {
-  width: 70%;
+  width: 800px;
   background-color: purple;
   display: flex;
   flex-direction: column;
@@ -77,7 +77,7 @@ body {
 }
 
 .card {
-  background: pink;
+  background: blue;
   display: flex;
   flex-direction: column;
   justify-content: stretch;
@@ -116,6 +116,18 @@ button {
   flex-direction: column;
   align-items: center;
   /* background: none; */
+}
+
+.green {
+  border-color: forestgreen;
+  background-color: forestgreen;
+  width: 50px;
+}
+
+.red {
+  border-color: crimson;
+  background-color: crimson;
+  width: 80px;
 }
 
 /*# sourceMappingURL=style.css.map */

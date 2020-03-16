@@ -8,3 +8,4 @@ document.getElementById("header").innerHTML =   Header();
 document.getElementById("footer").innerHTML = Footer();
 document.getElementById("container").insertAdjacentHTML("beforeend",Cards("1"));
 document.getElementById("container").insertAdjacentHTML("beforeend",Cards("2"));
+document.getElementById("container").insertAdjacentHTML("beforeend",Cards("3"));
