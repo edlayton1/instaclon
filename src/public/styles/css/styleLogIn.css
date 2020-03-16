@@ -1,0 +1,54 @@
+body{
+    background-image: url('../../assets/images/degradado.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    text-align: center;
+}
+.login label{
+    font-size: 20px;
+}
+.login-title img{
+    height: 100px;
+    width: 400px;
+}
+.login-sugerencia{
+    font-size: 25px;
+    color: rgb(53, 53, 53);
+}
+.facebook input{
+    background-color: blue;
+    color: white;
+    font-size: 25px;
+}
+
+.sumit input{
+    background-color: greenyellow;
+    color: black;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 500px) {
+    .login-title img{
+        height: 15%;
+        width: 80%;
+    }
+
+    .login label{
+        font-size: 5vw;
+    }
+    .login-sugerencia{
+        font-size: 6vw;
+        color: rgb(53, 53, 53);
+    }
+    .facebook input{
+        background-color: blue;
+        color: white;
+        font-size: 5vw;
+    }
+    .sumit input{
+        background-color: greenyellow;
+        color: black;
+        font-size: 6vw;
+    }
+}

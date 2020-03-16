@@ -3,6 +3,8 @@
 Beto
 ## Team members:
 - Moreno Peralta Angel Eduardo
+- Bautista Beltrán Axel Arturo
+- León Sabás Miguel Israel
 
 ## Objective
 
